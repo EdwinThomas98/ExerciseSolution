@@ -1,0 +1,122 @@
+<div class="p-3 mt-2">
+    <div class="container">
+        <!-- User Detais Section -->
+        <div class="card p-3 mb-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"><b>{{coreService.config.userDetails.userInformation}}</b></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button (click)="addUser()"
+                        class="btn btn-primary mb-3">{{coreService.config.createButton}}</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div *ngIf="coreService.userList.length > 0">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.firstname}}</b></th>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.lastName}}</b></th>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.dob}}</b></th>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.mobileNumber}}</b></th>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.email}}</b></th>
+                                    <th class="text-center"><b>{{coreService.config.userDetails.actions}}</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let entity of coreService.userList">
+                                    <td>{{entity.firstName}}</td>
+                                    <td>{{entity.lastName}}</td>
+                                    <td>{{entity.dob | date :coreService.config.dateFormat }}</td>
+                                    <td>{{entity.mobileNumber}}</td>
+                                    <td>{{entity.email}}</td>
+                                    <td class="text-center">
+                                        <button (click)=" editUser(entity.userId)"
+                                            class="btn btn-primary mr-10">{{coreService.config.editButton}}</button>
+                                        <button (click)="deleteUser(entity.userId)"
+                                            class="btn btn-danger mr-10">{{coreService.config.deleteButton}}</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- User Detais Section -->
+
+        <!-- Add or Update Section -->
+        <div *ngIf="coreService.addOrEdit" class="card p-3 mb-3 mt-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><b>{{textproperty}}</b></h2>
+                </div>
+            </div>
+            <form [formGroup]="form" (ngSubmit)="onFormSubmit()">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="requiredField"
+                            for="firstName">{{coreService.config.userDetails.firstname}}</label>
+                        <input type="text" placeholder="Your First Name" class="form-control mt-1"
+                            formControlName="firstName" required>
+                        <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched"
+                            class="text-danger">
+                            {{coreService.config.userDetails.firstname}} is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="requiredField" for="lastName">{{coreService.config.userDetails.lastName}}</label>
+                        <input type="text" placeholder="Your Last Name" class="form-control mt-1"
+                            formControlName="lastName" required>
+                        <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched" class="text-danger">
+                            {{coreService.config.userDetails.lastName}} is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="requiredField" for="dob">{{coreService.config.userDetails.dob}}</label>
+                        <input type="date" class="form-control mt-1" formControlName="dob"
+                            [ngModel]="selectedmodel?.dob| date:coreService.config.actualDateFormat" required>
+                        <div *ngIf="form.get('dob')?.invalid && form.get('dob')?.touched" class="text-danger">
+                            {{coreService.config.userDetails.dob}} is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="requiredField"
+                            for="mobileNumber">{{coreService.config.userDetails.mobileNumber}}</label>
+                        <input type="text" placeholder="Your Mobile Number" class="form-control mt-1"
+                            formControlName="mobileNumber" required>
+                        <div *ngIf="form.get('mobileNumber')?.invalid && form.get('mobileNumber')?.touched"
+                            class="text-danger">
+                            {{coreService.config.userDetails.mobileNumber}} is required
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="requiredField" for="email">{{coreService.config.userDetails.email}}</label>
+                        <input type="text" placeholder="Your Email" class="form-control mt-1" formControlName="email"
+                            required>
+                        <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="text-danger">
+                            {{coreService.config.userDetails.email}} is required
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-12">
+                        <button type="button" (click)="onCancelForm()"
+                            class="btn btn-grey mr-10 pull-right">{{coreService.config.cancelButton}}</button>
+                        <button type="submit" class="btn btn-primary mr-10 pull-right"
+                            [disabled]="form.invalid">{{coreService.config.saveButton}}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Add or Update Section -->
+    </div>
+</div>

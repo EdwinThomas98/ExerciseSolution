@@ -1,0 +1,96 @@
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.mr-10 {
+    margin-right: 10px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.requiredField::after {
+    content: "*";
+    color: red;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff5000;
+    border-color: #ff5000;
+}
+
+.btn-grey {
+    color: #fff;
+    background-color: #777777;
+    border-color: #777777;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #777777;
+    border-color: #777777;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    background-color: grey;
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-danger {
+    color: #dc3545;
+}

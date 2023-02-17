@@ -1,0 +1,35 @@
+{
+    "baseAPIURL": "https://localhost:44398/api/",
+    "apiKey": "Bearer VGVzdEB0ZXN0LmNvbTpUZXN0QDEyMw==",
+    "createButton": "Create",
+    "editButton": "Edit",
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "deleteButton": "Delete",
+    "actualDateFormat": "yyyy-MM-dd",
+    "dateFormat": "dd-MM-yyyy",
+    "welComeDetails": {
+        "welcomeMesssage": "Welcome to user application!!",
+        "featureMessage": "Here are some features of the application:",
+        "featureOneMessage": "You can view all the user information",
+        "featureTwoMessage": "You can create the user information",
+        "featureThreeMessage": "You can edit the user information",
+        "featureFourMessage": "You can delete the user information",
+        "clickHereMessage": "Click here to navigate"
+    },
+    "userDetails": {
+        "userInformation": "User Information",
+        "firstname": "First Name",
+        "lastName": "Last Name",
+        "dob": "Date of Birth",
+        "mobileNumber": "Mobile Number",
+        "email": "Email Address",
+        "actions": "Actions",
+        "createUserMessage": "Create New User",
+        "editUserMessage": "Edit User : ",
+        "deleteConfirmationMessage": "Are you sure you want to delete this user?",
+        "userDeletedSuccessMessage": "User deleted successfully",
+        "userUpdatedSuccessMessage": "User updated successfully",
+        "userCreatedSuccessMessage": "User created successfully"
+    }
+}
