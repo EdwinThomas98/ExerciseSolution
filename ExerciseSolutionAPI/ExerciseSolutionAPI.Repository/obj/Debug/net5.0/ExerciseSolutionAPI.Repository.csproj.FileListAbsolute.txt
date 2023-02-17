@@ -1,0 +1,12 @@
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\bin\Debug\net5.0\ExerciseSolutionAPI.Repository.deps.json
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\bin\Debug\net5.0\ExerciseSolutionAPI.Repository.dll
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\bin\Debug\net5.0\ref\ExerciseSolutionAPI.Repository.dll
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\bin\Debug\net5.0\ExerciseSolutionAPI.Repository.pdb
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.csproj.AssemblyReference.cache
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.AssemblyInfoInputs.cache
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.AssemblyInfo.cs
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.csproj.CoreCompileInputs.cache
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.dll
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ref\ExerciseSolutionAPI.Repository.dll
+C:\Backup\Services\ExerciseSolution\ExerciseSolutionAPI\ExerciseSolutionAPI.Repository\obj\Debug\net5.0\ExerciseSolutionAPI.Repository.pdb
